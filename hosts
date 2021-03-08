@@ -1,0 +1,7 @@
+---
+all:
+  hosts:
+  children:
+    workstations:
+      hosts:
+        localhost:

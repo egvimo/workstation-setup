@@ -1,0 +1,5 @@
+---
+- hosts: workstations
+  tasks:
+    - import_role:
+        name: egvimo.misc.starship
