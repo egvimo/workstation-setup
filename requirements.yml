@@ -2,4 +2,6 @@
 collections:
   - name: community.general
   - name: community.windows
-  - name: egvimo.misc
+  - name: https://github.com/egvimo/ansible-collection-misc.git
+    type: git
+    version: main
