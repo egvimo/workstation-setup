@@ -23,7 +23,7 @@ jobs:
           python-version: "3.x"
 
       - name: Install Kerberos dependencies
-        run: sudo apt install python-dev libkrb5-dev krb5-user
+        run: sudo apt install python3-dev libkrb5-dev krb5-user
 
       - name: Install dependencies
         run: pip3 install -r requirements.txt
