@@ -2,6 +2,8 @@
 - hosts: workstations
   tasks:
     - import_role:
-        name: egvimo.misc.starship
-    - import_role:
-        name: egvimo.misc.kubectl
+        name: egvimo.installer
+      vars:
+        installer_packages:
+          - kubectl
+          - starship
