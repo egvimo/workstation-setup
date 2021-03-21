@@ -1,7 +1,9 @@
 ---
+dependencies:
+  - name: egvimo.installer
+    src: git+https://github.com/egvimo/ansible-role-installer.git
+    version: main
 collections:
-  - name: community.general
-  - name: community.windows
   - name: https://github.com/egvimo/ansible-collection-misc.git
     type: git
     version: main
