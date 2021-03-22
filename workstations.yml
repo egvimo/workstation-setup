@@ -7,8 +7,11 @@
         installer_packages:
           - corretto11
           - dbeaver
+          - docker
+          - git
           - kubectl
           - nvm
           - starship
+          - vagrant
           - vscode
           - windows-terminal
