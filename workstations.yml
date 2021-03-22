@@ -5,5 +5,10 @@
         name: egvimo.installer
       vars:
         installer_packages:
+          - corretto11
+          - dbeaver
           - kubectl
+          - nvm
           - starship
+          - vscode
+          - windows-terminal
