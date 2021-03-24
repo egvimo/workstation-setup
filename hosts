@@ -4,4 +4,4 @@ all:
   children:
     workstations:
       hosts:
-        localhost:
+        localhost: # TODO Set hostname
