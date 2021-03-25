@@ -39,6 +39,8 @@ Clone this repository:
 git clone https://github.com/egvimo/workstation-setup.git
 ```
 
+Optional: Add the submodule: `git submodule add https://github.com/egvimo/ansible-role-installer.git roles/egvimo.installer`.
+
 Run [setup_windows.ps1](setup_windows.ps1) script inside PowerShell with elevated rights. This script triggers a restart after enabling WSL. Run this script again after restart to finish the Windows setup.
 
 Open WSL and run [setup_wsl.sh](setup_wsl.sh) script.
