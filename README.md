@@ -4,20 +4,7 @@ Scripts to setup my workstations.
 
 ## Prepare
 
-Install Git via [Scoop](https://scoop.sh/):
-
-```shell
-# Change execution policy, if necessary 
-Set-ExecutionPolicy RemoteSigned -scope CurrentUser
-# Install scoop
-Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
-```
-
-```shell
-scoop install git
-```
-
-Configure Git:
+Install Git and configure it:
 
 ```shell
 # Global
@@ -38,8 +25,6 @@ Clone this repository:
 ```shell
 git clone https://github.com/egvimo/workstation-setup.git
 ```
-
-Optional: Add the submodule: `git submodule add https://github.com/egvimo/ansible-role-installer.git roles/egvimo.installer`.
 
 Run [setup_windows.ps1](setup_windows.ps1) script inside PowerShell with elevated rights. This script triggers a restart after enabling WSL. Run this script again after restart to finish the Windows setup.
 
