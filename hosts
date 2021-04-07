@@ -2,6 +2,9 @@
 all:
   hosts:
   children:
+    wsl:
+      hosts:
+        localhost:
     workstations:
       hosts:
         localhost: # TODO Set hostname

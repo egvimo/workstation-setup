@@ -1,0 +1,8 @@
+---
+- hosts: wsl
+  tasks:
+    - import_role:
+        name: egvimo.installer
+      vars:
+        installer_packages:
+          - starship
