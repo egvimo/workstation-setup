@@ -1,5 +1,5 @@
 ---
-ansible_user: user@DOMAIN # TODO Set user
+ansible_user: "{{ lookup('env','USER') }}@DOMAIN" # TODO Set user/domain
 ansible_connection: winrm
 ansible_winrm_transport: kerberos
 ansible_winrm_scheme: http
