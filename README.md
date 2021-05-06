@@ -4,6 +4,12 @@ Scripts to setup my workstations.
 
 ## Prepare
 
+Allow script execution:
+
+```powershell
+Set-ExecutionPolicy RemoteSigned -scope CurrentUser -Force
+```
+
 Install Git and configure it:
 
 ```shell
