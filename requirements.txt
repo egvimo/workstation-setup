@@ -1,4 +1,4 @@
 ansible==4.3.0
-ansible-lint==5.1.1
+ansible-lint==5.1.2
 pywinrm==0.4.2
 pykerberos==1.2.1
