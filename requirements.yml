@@ -1,5 +1,5 @@
 ---
-roles:
-  - name: egvimo.installer
-    src: git+https://github.com/egvimo/ansible-role-installer.git
+collections:
+  - name: https://github.com/egvimo/ansible-collection-misc.git
+    type: git
     version: main

@@ -2,7 +2,7 @@
 - hosts: workstations
   tasks:
     - import_role:
-        name: egvimo.installer
+        name: egvimo.misc.installer
       vars:
         installer_packages:
           - corretto11
