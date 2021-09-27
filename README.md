@@ -13,23 +13,18 @@ Set-ExecutionPolicy RemoteSigned -scope CurrentUser -Force
 Install Git and configure it:
 
 ```shell
-# Global
 git config --global user.name "FIRST_NAME LAST_NAME"
 git config --global user.email "MY_NAME@example.com"
 ```
 
-```shell
-# Repo specific
-git config user.name "FIRST_NAME LAST_NAME"
-git config user.email "MY_NAME@example.com"
-```
+Remove the `--global` flag to apply to local configuration.
 
 ## Setup
 
 Clone this repository:
 
 ```shell
-git clone https://github.com/egvimo/workstation-setup.git
+git clone https://github.com/egvimo/workstation-setup.git --recurse-submodules
 ```
 
 Run [setup_windows.ps1](setup_windows.ps1) script inside PowerShell with elevated rights. This script triggers a restart after enabling WSL. Run this script again after restart to finish the Windows setup.
