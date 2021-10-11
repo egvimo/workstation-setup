@@ -11,5 +11,3 @@ python3 -m venv .venv --prompt ansible
 source .venv/bin/activate
 
 pip3 install -r requirements.txt
-
-ansible-galaxy install -r requirements.yml
