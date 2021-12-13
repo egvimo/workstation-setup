@@ -1,7 +1,15 @@
 {
   "files.exclude": {
     "**/.git": true,
-    "**/.venv": true,
+    "**/.cache": true,
     "**/ansible_collections/community": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/ansible_collections/community": true
+  },
+  "search.exclude": {
+    "**/.venv": true
   }
 }
