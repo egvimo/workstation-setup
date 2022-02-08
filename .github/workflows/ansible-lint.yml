@@ -9,6 +9,7 @@ on:
 
 jobs:
   lint:
+    name: Lint
     runs-on: ubuntu-latest
 
     env:
@@ -24,6 +25,9 @@ jobs:
         with:
           python-version: "3.x"
 
+      - name: Install Kerberos dependencies
+        run: sudo apt install python3-dev libkrb5-dev krb5-user
+
       - name: Pip cache
         uses: actions/cache@v2
         with:
@@ -31,9 +35,6 @@ jobs:
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
-
-      - name: Install Kerberos dependencies
-        run: sudo apt install python3-dev libkrb5-dev krb5-user
 
       - name: Install dependencies
         run: pip3 install -r requirements.txt
