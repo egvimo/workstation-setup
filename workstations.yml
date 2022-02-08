@@ -5,13 +5,18 @@
         name: egvimo.misc.installer
       vars:
         installer_packages:
-          - corretto11
+          - 7zip
           - dbeaver
-          - docker
-          - git
+          - greenshot
+          - helm
+          - k9s
           - kubectl
+          - licecap
+          - mremoteng
+          - notepadplusplus
           - nvm
           - starship
-          - vagrant
           - vscode
           - windows-terminal
+          - winmerge
+          - winscp
