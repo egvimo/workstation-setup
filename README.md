@@ -36,7 +36,7 @@ Set the correct values for the [hosts](hosts) and [variables](group_vars/worksta
 Enter the virtual environment with
 
 ```shell
-source .venv/bin/activate
+pipenv shell
 ```
 
 Obtain a Kerberos ticket

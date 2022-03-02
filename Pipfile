@@ -1,0 +1,12 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+ansible = "==5.4.0"
+pywinrm = "==0.4.2"
+pykerberos = "==1.2.1"
+
+[dev-packages]
+ansible-lint = "==5.4.0"
