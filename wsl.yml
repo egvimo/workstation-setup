@@ -1,8 +1,21 @@
 ---
 - hosts: wsl
   tasks:
+    - name: Allow WSL user to have passwordless sudo
+      ansible.builtin.lineinfile:
+        path: "/etc/sudoers.d/{{ lookup('env','USER') }}"
+        state: present
+        regexp: "^{{ lookup('env','USER') }} ALL="
+        line: "{{ lookup('env','USER') }} ALL=(ALL) NOPASSWD: ALL"
+        create: true
+        validate: /usr/sbin/visudo -cf %s
+      become: true
+
     - import_role:
         name: egvimo.misc.installer
       vars:
         installer_packages:
           - starship
+
+    - import_role:
+        name: egvimo.misc.docker_wsl

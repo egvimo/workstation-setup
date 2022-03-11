@@ -20,3 +20,6 @@
           - windows-terminal
           - winmerge
           - winscp
+
+    - import_role:
+        name: egvimo.misc.docker_wsl
