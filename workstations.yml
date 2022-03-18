@@ -1,7 +1,7 @@
 ---
 - hosts: workstations
   tasks:
-    - import_role:
+    - ansible.builtin.import_role:
         name: egvimo.misc.installer
       vars:
         installer_packages:
@@ -21,5 +21,5 @@
           - winmerge
           - winscp
 
-    - import_role:
+    - ansible.builtin.import_role:
         name: egvimo.misc.docker_wsl
