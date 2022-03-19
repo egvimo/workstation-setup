@@ -11,11 +11,13 @@
         validate: /usr/sbin/visudo -cf %s
       become: true
 
-    - ansible.builtin.import_role:
+    - name: Import installer role
+      ansible.builtin.import_role:
         name: egvimo.misc.installer
       vars:
         installer_packages:
           - starship
 
-    - ansible.builtin.import_role:
+    - name: Import Docker WSL role
+      ansible.builtin.import_role:
         name: egvimo.misc.docker_wsl
