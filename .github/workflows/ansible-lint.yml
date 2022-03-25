@@ -31,7 +31,7 @@ jobs:
         run: sudo apt install pipenv python3-dev libkrb5-dev krb5-user
 
       - name: Cache virtual environment
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ~/.local/share/virtualenvs
           key: ${{ runner.os }}-python-${{ steps.setup-python.outputs.python-version }}-pipenv-${{ hashFiles('Pipfile.lock') }}
