@@ -28,7 +28,10 @@ jobs:
           python-version: "3.x"
 
       - name: Install packages
-        run: sudo apt install pipenv python3-dev libkrb5-dev krb5-user
+        run: sudo apt install python3-dev libkrb5-dev krb5-user
+
+      - name: Install pipenv
+        run: pip3 install pipenv
 
       - name: Cache virtual environment
         uses: actions/cache@v3
