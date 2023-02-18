@@ -1,5 +1,6 @@
 ---
-- hosts: workstations
+- name: Workstations
+  hosts: workstations
   tasks:
     - name: Import installer role
       ansible.builtin.import_role:

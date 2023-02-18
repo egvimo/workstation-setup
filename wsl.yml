@@ -1,5 +1,6 @@
 ---
-- hosts: wsl
+- name: WSL
+  hosts: wsl
   tasks:
     - name: Allow WSL user to have passwordless sudo
       ansible.builtin.lineinfile:
