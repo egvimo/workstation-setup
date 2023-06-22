@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-ansible = "==8.0.0"
+ansible = "==8.1.0"
 pywinrm = "==0.4.3"
 pykerberos = "==1.2.4"
 
