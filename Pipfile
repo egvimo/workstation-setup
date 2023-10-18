@@ -9,4 +9,4 @@ pywinrm = "==0.4.3"
 pykerberos = "==1.2.4"
 
 [dev-packages]
-ansible-lint = "==6.20.3"
+ansible-lint = "==6.21.0"
